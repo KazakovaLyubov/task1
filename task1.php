@@ -61,7 +61,7 @@
 		<div class="list">
 		<?php
 			foreach($flats as $flat=>$items){	
-				echo '<div class="flat">'.$flat."</div>";
+				echo '<div class="flat">'.htmlspecialchars($flat)."</div>";
 				echo '<hr>';
 				foreach($items as $item){
 					?><div class="row"><?php
@@ -102,8 +102,7 @@
 				}		
 			}	?>
 		</div>
-	</body>
-</html>	
+		
 	<style type="text/css">
 		.flat{
 			margin-left:10px;
@@ -129,7 +128,8 @@
 			clear:left;
 			
 		}
-		
+	</body>
+</html>
 	
 	
 	
